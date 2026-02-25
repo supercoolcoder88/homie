@@ -3,835 +3,183 @@
   "result": [
     {
       "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZAXD76BAFGZ2SKXWVACW",
-      "config_subentry_id": null,
-      "created_at": 1771721173.934998,
-      "device_id": "8a660e95848642677b54030b86806acf",
-      "disabled_by": "integration",
-      "entity_category": "diagnostic",
-      "entity_id": "binary_sensor.sun_solar_rising",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "c7c69072b78584e3ee78a45d81292e4d",
-      "labels": [],
-      "modified_at": 1771721173.935047,
-      "name": null,
-      "options": {},
-      "original_name": "Solar rising",
-      "platform": "sun",
-      "translation_key": "solar_rising",
-      "unique_id": "01KJ1CZAXD76BAFGZ2SKXWVACW-solar_rising"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZAXD76BAFGZ2SKXWVACW",
-      "config_subentry_id": null,
-      "created_at": 1771721173.935295,
-      "device_id": "8a660e95848642677b54030b86806acf",
-      "disabled_by": null,
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.sun_next_dawn",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "701660c6c9074ae5c6dadc402cbf2baf",
-      "labels": [],
-      "modified_at": 1771721174.496257,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
+      "config_entries": [
+        "01KJ1CZAXD76BAFGZ2SKXWVACW"
+      ],
+      "config_entries_subentries": {
+        "01KJ1CZAXD76BAFGZ2SKXWVACW": [
+          null
+        ]
       },
-      "original_name": "Next dawn",
-      "platform": "sun",
-      "translation_key": "next_dawn",
-      "unique_id": "01KJ1CZAXD76BAFGZ2SKXWVACW-next_dawn"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZAXD76BAFGZ2SKXWVACW",
-      "config_subentry_id": null,
-      "created_at": 1771721173.935502,
-      "device_id": "8a660e95848642677b54030b86806acf",
+      "configuration_url": null,
+      "connections": [],
+      "created_at": 1771721173.934867,
       "disabled_by": null,
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.sun_next_dusk",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "a69cd7041bb22ea291c7b28791747a7d",
+      "entry_type": "service",
+      "hw_version": null,
+      "id": "8a660e95848642677b54030b86806acf",
+      "identifiers": [
+        [
+          "sun",
+          "01KJ1CZAXD76BAFGZ2SKXWVACW"
+        ]
+      ],
       "labels": [],
-      "modified_at": 1771721174.496451,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Next dusk",
-      "platform": "sun",
-      "translation_key": "next_dusk",
-      "unique_id": "01KJ1CZAXD76BAFGZ2SKXWVACW-next_dusk"
+      "manufacturer": null,
+      "model": null,
+      "model_id": null,
+      "modified_at": 1771721173.934909,
+      "name": "Sun",
+      "name_by_user": null,
+      "primary_config_entry": "01KJ1CZAXD76BAFGZ2SKXWVACW",
+      "serial_number": null,
+      "sw_version": null,
+      "via_device_id": null
     },
     {
       "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZAXD76BAFGZ2SKXWVACW",
-      "config_subentry_id": null,
-      "created_at": 1771721173.935644,
-      "device_id": "8a660e95848642677b54030b86806acf",
+      "config_entries": [
+        "01KJ1CZBEVJ95WFHKF2DX82TXX"
+      ],
+      "config_entries_subentries": {
+        "01KJ1CZBEVJ95WFHKF2DX82TXX": [
+          null
+        ]
+      },
+      "configuration_url": null,
+      "connections": [
+        [
+          "bluetooth",
+          "38:D5:7A:45:47:7E"
+        ]
+      ],
+      "created_at": 1771721174.491688,
       "disabled_by": null,
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.sun_next_midnight",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "bdca085d5b330a909801734196d089be",
+      "entry_type": null,
+      "hw_version": "usb:v1D6Bp0246d0556",
+      "id": "f49724dbb1a2ccc1223c992b19d664f9",
+      "identifiers": [],
       "labels": [],
-      "modified_at": 1771721174.496537,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Next midnight",
-      "platform": "sun",
-      "translation_key": "next_midnight",
-      "unique_id": "01KJ1CZAXD76BAFGZ2SKXWVACW-next_midnight"
+      "manufacturer": "MediaTek Inc.",
+      "model": "Wireless_Device (0489:e0cd)",
+      "model_id": null,
+      "modified_at": 1771721174.491731,
+      "name": "hci0 (38:D5:7A:45:47:7E)",
+      "name_by_user": null,
+      "primary_config_entry": "01KJ1CZBEVJ95WFHKF2DX82TXX",
+      "serial_number": null,
+      "sw_version": "will-laptop",
+      "via_device_id": null
     },
     {
       "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZAXD76BAFGZ2SKXWVACW",
-      "config_subentry_id": null,
-      "created_at": 1771721173.935777,
-      "device_id": "8a660e95848642677b54030b86806acf",
+      "config_entries": [
+        "01KJ1CZBF2H7ANMHX373N94A4R"
+      ],
+      "config_entries_subentries": {
+        "01KJ1CZBF2H7ANMHX373N94A4R": [
+          null
+        ]
+      },
+      "configuration_url": "homeassistant://config/backup",
+      "connections": [],
+      "created_at": 1771721174.524985,
       "disabled_by": null,
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.sun_next_noon",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "045e77746dbb805363eaf98c0e4bfcbe",
+      "entry_type": "service",
+      "hw_version": null,
+      "id": "77cc659379fa2099ab1f9abd958f0941",
+      "identifiers": [
+        [
+          "backup",
+          "backup_manager"
+        ]
+      ],
       "labels": [],
-      "modified_at": 1771721174.496601,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Next noon",
-      "platform": "sun",
-      "translation_key": "next_noon",
-      "unique_id": "01KJ1CZAXD76BAFGZ2SKXWVACW-next_noon"
+      "manufacturer": "Home Assistant",
+      "model": "Home Assistant Backup",
+      "model_id": null,
+      "modified_at": 1771721174.525023,
+      "name": "Backup",
+      "name_by_user": null,
+      "primary_config_entry": "01KJ1CZBF2H7ANMHX373N94A4R",
+      "serial_number": null,
+      "sw_version": "2026.2.3",
+      "via_device_id": null
     },
     {
       "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZAXD76BAFGZ2SKXWVACW",
-      "config_subentry_id": null,
-      "created_at": 1771721173.935921,
-      "device_id": "8a660e95848642677b54030b86806acf",
+      "config_entries": [
+        "01KJ1D7CP7V4GRCKEM4PDFHPEB"
+      ],
+      "config_entries_subentries": {
+        "01KJ1D7CP7V4GRCKEM4PDFHPEB": [
+          null
+        ]
+      },
+      "configuration_url": "https://www.met.no/en",
+      "connections": [],
+      "created_at": 1771721440.309461,
       "disabled_by": null,
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.sun_next_rising",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "d1657a9f0a0def059b58ef41becaf395",
+      "entry_type": "service",
+      "hw_version": null,
+      "id": "25fafc812dcf533ac81ac0ddbae2581c",
+      "identifiers": [
+        [
+          "met",
+          "01KJ1D7CP7V4GRCKEM4PDFHPEB"
+        ]
+      ],
       "labels": [],
-      "modified_at": 1771721174.496662,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Next rising",
-      "platform": "sun",
-      "translation_key": "next_rising",
-      "unique_id": "01KJ1CZAXD76BAFGZ2SKXWVACW-next_rising"
+      "manufacturer": "Met.no",
+      "model": "Forecast",
+      "model_id": null,
+      "modified_at": 1771721440.309503,
+      "name": "Forecast",
+      "name_by_user": null,
+      "primary_config_entry": "01KJ1D7CP7V4GRCKEM4PDFHPEB",
+      "serial_number": null,
+      "sw_version": null,
+      "via_device_id": null
     },
     {
       "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZAXD76BAFGZ2SKXWVACW",
-      "config_subentry_id": null,
-      "created_at": 1771721173.936042,
-      "device_id": "8a660e95848642677b54030b86806acf",
+      "config_entries": [
+        "01KJ1MYPD0RZJCMQB99HZFPT7H"
+      ],
+      "config_entries_subentries": {
+        "01KJ1MYPD0RZJCMQB99HZFPT7H": [
+          null
+        ]
+      },
+      "configuration_url": null,
+      "connections": [
+        [
+          "mac",
+          "cc:ba:bd:db:55:2c"
+        ]
+      ],
+      "created_at": 1771729541.802848,
       "disabled_by": null,
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.sun_next_setting",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "991beffe4240752dabd40fceb7e86cff",
+      "entry_type": null,
+      "hw_version": "2.0",
+      "id": "0f807739cf065df0e05f43dd1997ec84",
+      "identifiers": [
+        [
+          "tplink",
+          "802202A31EF26E32CD9EBCD17CEC324124B1EB7C"
+        ]
+      ],
       "labels": [],
-      "modified_at": 1771721174.49672,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Next setting",
-      "platform": "sun",
-      "translation_key": "next_setting",
-      "unique_id": "01KJ1CZAXD76BAFGZ2SKXWVACW-next_setting"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZAXD76BAFGZ2SKXWVACW",
-      "config_subentry_id": null,
-      "created_at": 1771721173.936159,
-      "device_id": "8a660e95848642677b54030b86806acf",
-      "disabled_by": "integration",
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.sun_solar_elevation",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "c498b6f675cbf51317f4a56bbfb9c1d7",
-      "labels": [],
-      "modified_at": 1771721173.936182,
-      "name": null,
-      "options": {},
-      "original_name": "Solar elevation",
-      "platform": "sun",
-      "translation_key": "solar_elevation",
-      "unique_id": "01KJ1CZAXD76BAFGZ2SKXWVACW-solar_elevation"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZAXD76BAFGZ2SKXWVACW",
-      "config_subentry_id": null,
-      "created_at": 1771721173.936235,
-      "device_id": "8a660e95848642677b54030b86806acf",
-      "disabled_by": "integration",
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.sun_solar_azimuth",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "2bf61786a63b3699d973bb6cbc0bead0",
-      "labels": [],
-      "modified_at": 1771721173.936255,
-      "name": null,
-      "options": {},
-      "original_name": "Solar azimuth",
-      "platform": "sun",
-      "translation_key": "solar_azimuth",
-      "unique_id": "01KJ1CZAXD76BAFGZ2SKXWVACW-solar_azimuth"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZBF2H7ANMHX373N94A4R",
-      "config_subentry_id": null,
-      "created_at": 1771721174.525121,
-      "device_id": "77cc659379fa2099ab1f9abd958f0941",
-      "disabled_by": null,
-      "entity_category": null,
-      "entity_id": "event.backup_automatic_backup",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "9df12c49d4197b9fb6ce7bf1aa8731be",
-      "labels": [],
-      "modified_at": 1771721174.52537,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Automatic backup",
-      "platform": "backup",
-      "translation_key": "automatic_backup_event",
-      "unique_id": "automatic_backup_event"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZBF2H7ANMHX373N94A4R",
-      "config_subentry_id": null,
-      "created_at": 1771721174.525667,
-      "device_id": "77cc659379fa2099ab1f9abd958f0941",
-      "disabled_by": null,
-      "entity_category": null,
-      "entity_id": "sensor.backup_backup_manager_state",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "b6b408b3b9d685eb4c0daab1979f934d",
-      "labels": [],
-      "modified_at": 1771721174.525832,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Backup Manager state",
-      "platform": "backup",
-      "translation_key": "backup_manager_state",
-      "unique_id": "backup_manager_state"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZBF2H7ANMHX373N94A4R",
-      "config_subentry_id": null,
-      "created_at": 1771721174.525992,
-      "device_id": "77cc659379fa2099ab1f9abd958f0941",
-      "disabled_by": null,
-      "entity_category": null,
-      "entity_id": "sensor.backup_next_scheduled_automatic_backup",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "92925430d4bef9a2f40f9e6621ed8834",
-      "labels": [],
-      "modified_at": 1771721174.526109,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Next scheduled automatic backup",
-      "platform": "backup",
-      "translation_key": "next_scheduled_automatic_backup",
-      "unique_id": "next_scheduled_automatic_backup"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZBF2H7ANMHX373N94A4R",
-      "config_subentry_id": null,
-      "created_at": 1771721174.526221,
-      "device_id": "77cc659379fa2099ab1f9abd958f0941",
-      "disabled_by": null,
-      "entity_category": null,
-      "entity_id": "sensor.backup_last_successful_automatic_backup",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "8a85fd39b270c22f63e4be77d34f0c86",
-      "labels": [],
-      "modified_at": 1771721174.526325,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Last successful automatic backup",
-      "platform": "backup",
-      "translation_key": "last_successful_automatic_backup",
-      "unique_id": "last_successful_automatic_backup"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1CZBF2H7ANMHX373N94A4R",
-      "config_subentry_id": null,
-      "created_at": 1771721174.52643,
-      "device_id": "77cc659379fa2099ab1f9abd958f0941",
-      "disabled_by": null,
-      "entity_category": null,
-      "entity_id": "sensor.backup_last_attempted_automatic_backup",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "759f37d96ce1d2094f0e90f1b9589048",
-      "labels": [],
-      "modified_at": 1771721174.526533,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Last attempted automatic backup",
-      "platform": "backup",
-      "translation_key": "last_attempted_automatic_backup",
-      "unique_id": "last_attempted_automatic_backup"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": null,
-      "config_subentry_id": null,
-      "created_at": 1771721419.180469,
-      "device_id": null,
-      "disabled_by": null,
-      "entity_category": null,
-      "entity_id": "person.will",
-      "has_entity_name": false,
-      "hidden_by": null,
-      "icon": null,
-      "id": "5cd5faea152751ad41534a3fa4a48ce1",
-      "labels": [],
-      "modified_at": 1771721419.180943,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "will",
-      "platform": "person",
-      "translation_key": null,
-      "unique_id": "will"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1D7CNQK5G3C7P9GP7GQBB3",
-      "config_subentry_id": null,
-      "created_at": 1771721438.023171,
-      "device_id": null,
-      "disabled_by": null,
-      "entity_category": null,
-      "entity_id": "tts.google_translate_en_com",
-      "has_entity_name": false,
-      "hidden_by": null,
-      "icon": null,
-      "id": "f29215fdf1e852d2d535ea356ac2c31a",
-      "labels": [],
-      "modified_at": 1771721438.023577,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Google Translate en com",
-      "platform": "google_translate",
-      "translation_key": null,
-      "unique_id": "01KJ1D7CNQK5G3C7P9GP7GQBB3"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1D7CNVTPGJMNY4CQPW7GEF",
-      "config_subentry_id": null,
-      "created_at": 1771721438.031443,
-      "device_id": null,
-      "disabled_by": null,
-      "entity_category": null,
-      "entity_id": "todo.shopping_list",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "d82b12c7fa5609f435c781d95024b84f",
-      "labels": [],
-      "modified_at": 1771721438.03175,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": true
-        }
-      },
-      "original_name": "Shopping List",
-      "platform": "shopping_list",
-      "translation_key": "shopping_list",
-      "unique_id": "01KJ1D7CNVTPGJMNY4CQPW7GEF"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1D7CP7V4GRCKEM4PDFHPEB",
-      "config_subentry_id": null,
-      "created_at": 1771721440.309675,
-      "device_id": "25fafc812dcf533ac81ac0ddbae2581c",
-      "disabled_by": null,
-      "entity_category": null,
-      "entity_id": "weather.forecast_home",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "b29daedfb99849346db171cc97bc4d59",
-      "labels": [],
-      "modified_at": 1771721440.310034,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Home",
-      "platform": "met",
-      "translation_key": null,
-      "unique_id": "home"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.803476,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": null,
-      "entity_category": "diagnostic",
-      "entity_id": "binary_sensor.tapo_p100_1_cloud_connection",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "67e615f2a5ec0f1adb7502dd5946f4a4",
-      "labels": [],
-      "modified_at": 1771729541.804051,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Cloud connection",
-      "platform": "tplink",
-      "translation_key": "cloud_connection",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_cloud_connection"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.804269,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": null,
-      "entity_category": "diagnostic",
-      "entity_id": "binary_sensor.tapo_p100_1_overheated",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "4aed9f8185446ac8d8fe4a08fc014441",
-      "labels": [],
-      "modified_at": 1771729541.804429,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Overheated",
-      "platform": "tplink",
-      "translation_key": "overheated",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_overheated"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.805421,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": "integration",
-      "entity_category": "diagnostic",
-      "entity_id": "button.tapo_p100_1_restart",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "5ecb597f94b3b50245d4b41e425baa6d",
-      "labels": [],
-      "modified_at": 1771729541.805472,
-      "name": null,
-      "options": {},
-      "original_name": "Restart",
-      "platform": "tplink",
-      "translation_key": "reboot",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_reboot"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.81863,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": null,
-      "entity_category": "config",
-      "entity_id": "number.tapo_p100_1_turn_off_in",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "fd237b5048269f46746365066ec34df3",
-      "labels": [],
-      "modified_at": 1771729541.81926,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Turn off in",
-      "platform": "tplink",
-      "translation_key": "auto_off_minutes",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_auto_off_minutes"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.823544,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": null,
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.tapo_p100_1_signal_level",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "3ca6aa9ec4019fd7d0c3359bd449e6e1",
-      "labels": [],
-      "modified_at": 1771729541.824038,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Signal level",
-      "platform": "tplink",
-      "translation_key": "signal_level",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_signal_level"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.824283,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": "integration",
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.tapo_p100_1_signal_strength",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "5f1c958b742d8fee456e2719c834a70b",
-      "labels": [],
-      "modified_at": 1771729541.824335,
-      "name": null,
-      "options": {},
-      "original_name": "Signal strength",
-      "platform": "tplink",
-      "translation_key": "rssi",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_rssi"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.824466,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": "integration",
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.tapo_p100_1_ssid",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "0bea28e7dd3d795662342a69403bdeb7",
-      "labels": [],
-      "modified_at": 1771729541.824504,
-      "name": null,
-      "options": {},
-      "original_name": "SSID",
-      "platform": "tplink",
-      "translation_key": "ssid",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_ssid"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.824616,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": "integration",
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.tapo_p100_1_on_since",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "487fa49ecbe72529bd054d9d0069b541",
-      "labels": [],
-      "modified_at": 1771729541.824651,
-      "name": null,
-      "options": {},
-      "original_name": "On since",
-      "platform": "tplink",
-      "translation_key": "on_since",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_on_since"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.824749,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": "integration",
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.tapo_p100_1_device_time",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "1c5036160cddadaba369d708f54dd463",
-      "labels": [],
-      "modified_at": 1771729541.824789,
-      "name": null,
-      "options": {},
-      "original_name": "Device time",
-      "platform": "tplink",
-      "translation_key": "device_time",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_device_time"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.824923,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": null,
-      "entity_category": "diagnostic",
-      "entity_id": "sensor.tapo_p100_1_auto_off_at",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "b04ae6bbf5924da2fddefac84bd54e04",
-      "labels": [],
-      "modified_at": 1771729541.825114,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Auto-off at",
-      "platform": "tplink",
-      "translation_key": "auto_off_at",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_auto_off_at"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.826984,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": null,
-      "entity_category": null,
-      "entity_id": "switch.tapo_p100_1",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "107cafe1c33d1a585595e0de6fc0275f",
-      "labels": [],
-      "modified_at": 1771729541.827233,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": true
-        }
-      },
-      "original_name": null,
-      "platform": "tplink",
-      "translation_key": null,
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.827434,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": null,
-      "entity_category": "config",
-      "entity_id": "switch.tapo_p100_1_auto_off_enabled",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "95459a0499dc09c450faf4e55ef7b2f4",
-      "labels": [],
-      "modified_at": 1771729541.827725,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Auto-off enabled",
-      "platform": "tplink",
-      "translation_key": "auto_off_enabled",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_auto_off_enabled"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.827961,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": null,
-      "entity_category": "config",
-      "entity_id": "switch.tapo_p100_1_auto_update_enabled",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "054f6c1f4f43b5d7669ba2a7ed663fb5",
-      "labels": [],
-      "modified_at": 1771729541.828185,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "Auto-update enabled",
-      "platform": "tplink",
-      "translation_key": "auto_update_enabled",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_auto_update_enabled"
-    },
-    {
-      "area_id": null,
-      "categories": {},
-      "config_entry_id": "01KJ1MYPD0RZJCMQB99HZFPT7H",
-      "config_subentry_id": null,
-      "created_at": 1771729541.828387,
-      "device_id": "0f807739cf065df0e05f43dd1997ec84",
-      "disabled_by": null,
-      "entity_category": "config",
-      "entity_id": "switch.tapo_p100_1_led",
-      "has_entity_name": true,
-      "hidden_by": null,
-      "icon": null,
-      "id": "be41812a30299a9f0674ad79e3699535",
-      "labels": [],
-      "modified_at": 1771729541.828581,
-      "name": null,
-      "options": {
-        "conversation": {
-          "should_expose": false
-        }
-      },
-      "original_name": "LED",
-      "platform": "tplink",
-      "translation_key": "led",
-      "unique_id": "802202A31EF26E32CD9EBCD17CEC324124B1EB7C_led"
+      "manufacturer": "TP-Link",
+      "model": "P100",
+      "model_id": null,
+      "modified_at": 1771916950.669365,
+      "name": "Tapo P100 #1",
+      "name_by_user": "lights_1",
+      "primary_config_entry": "01KJ1MYPD0RZJCMQB99HZFPT7H",
+      "serial_number": null,
+      "sw_version": "1.2.5 Build 240411 Rel.143808",
+      "via_device_id": null
     }
   ],
   "success": true,
