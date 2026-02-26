@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"homie/homeassistant"
+	"homie/ollama"
 	"log"
 	"os"
 	"strings"
@@ -37,45 +38,60 @@ func main() {
 	if err := s.GetDevices(); err != nil {
 		log.Fatal("failed to get devices")
 	}
+
+	// Collect entity IDs for the LLM context
+	entityIDs := make([]string, len(s.Devices))
+	for i, d := range s.Devices {
+		entityIDs[i] = d.EntityID
+	}
+
+	// Initialize the Ollama LLM client
+	llm := ollama.NewClient("llama3.2")
+
+	userInput := "turn on the lights"
+	cmd, err := llm.Interpret(userInput, entityIDs)
+	if err != nil {
+		log.Fatal("failed to interpret command:", err)
+	}
+
+	if err := HandleAction(s, cmd); err != nil {
+		log.Fatal("failed to execute action")
+	}
 }
 
-type ActionFunc func(homeassistant.Service, map[string]any) error
+type ActionFunc func(*homeassistant.Service, *ollama.DeviceCommand) error
 
-func HandleAction(service homeassistant.Service, action string, params map[string]any) error {
+func HandleAction(service *homeassistant.Service, cmd *ollama.DeviceCommand) error {
 	actionsMap := map[string]ActionFunc{
 		"toggle_device": ToggleDevice,
 	}
 
 	// given llm response here
-	fn, ok := actionsMap[action]
+	fn, ok := actionsMap[cmd.Action]
 
 	if !ok {
 		return fmt.Errorf("action not found")
 	}
 
-	if err := fn(service, params); err != nil {
+	if err := fn(service, cmd); err != nil {
 		return err
-
 	}
 	return nil
 }
 
-func ToggleDevice(service homeassistant.Service, params map[string]any) error {
-	entityIDs, ok := params["entity_ids"].([]string)
-
-	if !ok {
-		return fmt.Errorf("entity_ids is missing from params")
+func ToggleDevice(service *homeassistant.Service, cmd *ollama.DeviceCommand) error {
+	if len(cmd.EntityIDs) == 0 {
+		return fmt.Errorf("entity_ids is empty")
 	}
 
-	newState, ok := params["newState"].(string)
-
-	if !ok {
-		return fmt.Errorf("newState is missing from params")
+	if cmd.NewState == "" {
+		return fmt.Errorf("newState is empty")
 	}
 
-	if err := service.ToggleEntities(entityIDs, newState); err != nil {
+	if err := service.ToggleEntities(cmd.EntityIDs, cmd.NewState); err != nil {
 		return err
 	}
 
+	log.Printf("success, turned %s %s", cmd.EntityIDs, cmd.Action)
 	return nil
 }

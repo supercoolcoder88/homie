@@ -102,6 +102,9 @@ func (s *Service) GetDevices() error {
 	devices := make([]Device, 0, len(response.Result))
 	for _, entity := range response.Result {
 		// eg: entity_id = "switch.tapo_p100_1"
+		if isExcludedEntity(entity.EntityID) {
+			continue
+		}
 		devices = append(devices, Device{
 			EntityID: entity.EntityID,
 		})
@@ -109,6 +112,28 @@ func (s *Service) GetDevices() error {
 
 	s.Devices = devices
 	return nil
+}
+
+// excludedSuffixes are config/diagnostic entities that should not be
+// exposed as controllable devices.
+var excludedSuffixes = []string{
+	"_auto_off_enabled",
+	"_auto_update",
+	"_firmware",
+	"_rssi",
+	"_signal_strength",
+	"_overheated",
+	"_overcurrent",
+	"_update",
+}
+
+func isExcludedEntity(entityID string) bool {
+	for _, suffix := range excludedSuffixes {
+		if strings.HasSuffix(entityID, suffix) {
+			return true
+		}
+	}
+	return false
 }
 
 // ToggleEntities calls a turn_on or turn_off service for the given entity
