@@ -47,7 +47,8 @@ Respond ONLY with valid JSON matching this exact schema:
 }
 
 Rules:
-- entity_ids must be an array of entity ID strings from the available devices list.
+- entity_ids must be an array of EXACT entity ID strings copied verbatim from the available devices list, including the domain prefix (e.g. "switch.lights_1", NOT just "lights_1").
+- NEVER strip or modify the entity ID. Use it exactly as it appears in the list.
 - newState must be exactly "on" or "off".
 - If the user says "turn on", "switch on", "enable", etc., use "on".
 - If the user says "turn off", "switch off", "disable", etc., use "off".

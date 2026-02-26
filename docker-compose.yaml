@@ -17,5 +17,7 @@ services:
     image: ghcr.io/ggerganov/whisper.cpp:main
     ports:
       - "8080:8080"
-    command: ["--model", "/models/ggml-base.en.bin", "--host", "0.0.0.0", "--port", "8080"]
+    command: ["/app/build/bin/whisper-server --model /models/ggml-base.en.bin --host 0.0.0.0 --port 8080"]
+    volumes:
+      - ./models:/models
     restart: unless-stopped

@@ -56,6 +56,8 @@ func main() {
 		log.Fatal("failed to record audio:", err)
 	}
 
+	log.Printf("recording complete")
+
 	// Transcribe the recorded audio using the local Whisper server.
 	w := whisper.NewClient("http://localhost:8080")
 	userInput, err := w.Transcribe(audioPath)
@@ -108,6 +110,6 @@ func ToggleDevice(service *homeassistant.Service, cmd *ollama.DeviceCommand) err
 		return err
 	}
 
-	log.Printf("success, turned %s %s", cmd.EntityIDs, cmd.Action)
+	log.Printf("success, turned %s %s", cmd.EntityIDs, cmd.NewState)
 	return nil
 }
