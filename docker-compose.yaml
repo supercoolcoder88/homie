@@ -11,3 +11,11 @@ services:
     network_mode: host
     environment:
       TZ: Australia/Melbourne
+
+  whisper:
+    container_name: whisper
+    image: ghcr.io/ggerganov/whisper.cpp:main
+    ports:
+      - "8080:8080"
+    command: ["--model", "/models/ggml-base.en.bin", "--host", "0.0.0.0", "--port", "8080"]
+    restart: unless-stopped

@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"homie/homeassistant"
 	"homie/ollama"
+	"homie/voice"
+	"homie/whisper"
 	"log"
 	"os"
 	"strings"
@@ -48,7 +50,21 @@ func main() {
 	// Initialize the Ollama LLM client
 	llm := ollama.NewClient("llama3.2")
 
-	userInput := "turn on the lights"
+	// Record voice input from the microphone.
+	audioPath, err := voice.Record()
+	if err != nil {
+		log.Fatal("failed to record audio:", err)
+	}
+
+	// Transcribe the recorded audio using the local Whisper server.
+	w := whisper.NewClient("http://localhost:8080")
+	userInput, err := w.Transcribe(audioPath)
+	if err != nil {
+		log.Fatal("failed to transcribe audio:", err)
+	}
+
+	log.Printf("Transcribed: %s", userInput)
+
 	cmd, err := llm.Interpret(userInput, entityIDs)
 	if err != nil {
 		log.Fatal("failed to interpret command:", err)

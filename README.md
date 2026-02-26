@@ -4,3 +4,10 @@
 1. Download ollama
 2. Download homeassistant 
     a. Need to name devices appropriately
+
+
+
+## When running
+```
+    ollama serve
+```
